@@ -2,23 +2,21 @@ package com.example.huseyin2023deneme;
 
 public class Citizen {
 
-    private int id;
+    private Integer CID;
     private String firstName;
     private String surname;
-    private String birthDay;
-    private String socialNumber;
-    private String phone;
-    private String email;
-    private String city;
-    private String street;
+    private String doB;
+    private String SSN;
+    private String phoneNr;
+    private String email, city, street;
 
-    public Citizen(int id, String firstName, String surname, String birthDay, String socialNumber, String phone, String email, String city, String street) {
-        this.id = id;
+    public Citizen(Integer CID, String firstName, String surname, String doB, String SSN, String phoneNr, String email, String city, String street) {
+        this.CID = CID;
         this.firstName = firstName;
         this.surname = surname;
-        this.birthDay = birthDay;
-        this.socialNumber = socialNumber;
-        this.phone = phone;
+        this.doB = doB;
+        this.SSN = SSN;
+        this.phoneNr = phoneNr;
         this.email = email;
         this.city = city;
         this.street = street;
@@ -26,12 +24,13 @@ public class Citizen {
 
     public Citizen() {}
 
-    public int getId() {
-        return id;
+
+    public Integer getCID() {
+        return CID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCID(Integer CID) {
+        this.CID = CID;
     }
 
     public String getFirstName() {
@@ -50,28 +49,28 @@ public class Citizen {
         this.surname = surname;
     }
 
-    public String getBirthDay() {
-        return birthDay;
+    public String getDoB() {
+        return doB;
     }
 
-    public void setBirthDay(String birthDay) {
-        this.birthDay = birthDay;
+    public void setDoB(String doB) {
+        this.doB = doB;
     }
 
-    public String getSocialNumber() {
-        return socialNumber;
+    public String getSSN() {
+        return SSN;
     }
 
-    public void setSocialNumber(String socialNumber) {
-        this.socialNumber = socialNumber;
+    public void setSSN(String SSN) {
+        this.SSN = SSN;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhoneNr() {
+        return phoneNr;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhoneNr(String phoneNr) {
+        this.phoneNr = phoneNr;
     }
 
     public String getEmail() {
@@ -97,6 +96,4 @@ public class Citizen {
     public void setStreet(String street) {
         this.street = street;
     }
-
-
 }
